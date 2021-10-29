@@ -279,7 +279,7 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="{{url('/pelatihan/pelatihankepemimpinan')}}" class="nav-link">
+                                <a href="#" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Data Kriteria dan Sub</p>
                                 </a>
@@ -287,7 +287,7 @@
                         </ul>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="{{url('/pelatihan/pelatihankepemimpinan')}}" class="nav-link">
+                                <a href="#" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Bobot Perbandingan</p>
                                 </a>
@@ -322,6 +322,17 @@
 
                             </p>
                         </a>
+                    </li>
+                    <li class="nav-item">
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <a href="{{ route('logout') }}"
+                               onclick="event.preventDefault();
+                        this.closest('form').submit();" class="nav-link" >
+                                <i class="nav-icon fas fa-power-off"></i>
+                                <p>Keluar</p>
+                            </a>
+                        </form>
                     </li>
 
                 </ul>

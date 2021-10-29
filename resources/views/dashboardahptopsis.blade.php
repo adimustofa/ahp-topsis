@@ -26,7 +26,7 @@
                     <!-- small box -->
                     <div class="small-box bg-success">
                         <div class="inner">
-                            <h3>53</h3>
+                            <h3>{{$jumlahdata['jalan']}}</h3>
 
                             <p>Jalan</p>
                         </div>
@@ -43,7 +43,7 @@
                     <!-- small box -->
                     <div class="small-box bg-blue">
                         <div class="inner">
-                            <h3>65</h3>
+                            <h3>{{$jumlahdata['survey']}}</h3>
 
                             <p>Survey</p>
                         </div>
